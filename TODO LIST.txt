@@ -1,0 +1,13 @@
+- On utilise less.min.js pour "compiler" le code less en css dynamiquement quand on charge la page, mais c'est utilisé seulement pour le développement : une fois le code css achevé, il faudra le compiler nous-même avant de passer le site en ligne.
+
+- largeur fixe + bande full width
+- bouton light/dark
+- blanc sur fond gris + couleurs :
+#594F4F (marron)
+#547980 (bleu océan)
+#45ADA8 (bleu vert)
+#9DE0AD (vert)
+#E5FCC2 (beige)
+
+SWEET ALERT
+Deepl traducteur

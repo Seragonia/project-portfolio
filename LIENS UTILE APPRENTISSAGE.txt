@@ -1,0 +1,1 @@
+Les integrity hash pour les lib chargées en CDN (techno très récente) : https://developer.mozilla.org/fr/docs/Web/Security/Subresource_Integrity
