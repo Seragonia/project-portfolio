@@ -6,6 +6,7 @@ var __debug = function(msg) { if(DEBUG){console.log("%c[DEBUG]%c :"+" %c "+msg+"
 
 
 var APP_CANVAS = {
+
 	canvas: null;
 	ctx: null;
 
@@ -25,5 +26,4 @@ var APP_CANVAS = {
     ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
     ctx.fillRect (30, 30, 55, 50);
   }
-
 };
