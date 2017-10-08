@@ -6,24 +6,77 @@ var __debug = function(msg) { if(DEBUG){console.log("%c[DEBUG]%c :"+" %c "+msg+"
 
 
 var APP_CANVAS = {
-
-	canvas: null;
-	ctx: null;
+	canvas: null,
+	ctx: null,
+	background: null,
+	canvas_width: 0,
+	canvas_height: 0,
 
   init: function() {
-    _debug("Creating the canvas");
-    this.canvas = document.getElementById('test')
-    ctx = canvas.getContext('2d');
-  
-
-  };
+		APP_PAGE.init();
+    __debug("Creating the canvas");
+    this.canvas = document.getElementById('header-canvas');
+		if(this.canvas)
+		{
+			this.ctx = this.canvas.getContext('2d');
+			this.canvas_width = parseInt(document.getElementById("header-canvas").getAttribute("height"));
+			this.canvas_height = parseInt(document.getElementById("header-canvas").getAttribute("width"));
+			this.draw();
+		}else {
+			__debug("Error while creating the canvas.");
+		}
+  },
 
   draw: function() {
-
-  	ctx.fillStyle = "rgb(200, 10, 10)";
-    ctx.fillRect (10, 10, 55, 60);
-
-    ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-    ctx.fillRect (30, 30, 55, 50);
+		this.background = this.ctx.createLinearGradient(this.canvas_width,0,this.canvas_width,this.canvas_height);
+		this.background.addColorStop(0.000, 'rgba(220, 220, 220, 1.000)');
+    this.background.addColorStop(1.000, 'rgba(237, 237, 237, 1.000)');
+		this.ctx.fillStyle = this.background;
+		this.ctx.fillRect(0,0,2*this.canvas_width,this.canvas_height);
   }
 };
+
+var APP_PAGE = {
+	navbar: null,
+	sticky: null,
+	color: ["594F4F", "547980", "45ADA8", "9DE0AD"],
+	choosenColor: 0,
+	main: null,
+	mobile: null,
+
+	init: function() {
+		__debug("Random content color bar");
+		this.choosenColor = Math.floor(Math.random() * this.color.length);
+		document.getElementById("main").style.borderColor = '#' + this.color[this.choosenColor];
+
+		this.navbar = document.getElementById("container-head");
+		this.main = document.getElementById("main");
+		this.mobile = document.getElementById("nav-icon");
+		this.sticky = 250;
+
+		$(document).ready(function(){
+			$('#nav-icon').click(function(){
+				$(this).toggleClass('open');
+				$('.menu').toggleClass('menu-active');
+				$('.main').toggleClass('menu-active');
+				//$('#nav-icon').toggleClass('menu-active');
+				$('#container').toggleClass('menu-active');
+				$(".sub-drop-icon").on("click", function(e) {
+					$(this).parent().find(".sub-menu").toggleClass("opened");
+				});
+			});
+		});
+	},
+
+	scroll: function() {
+		if (window.pageYOffset >= this.sticky) {
+			this.navbar.classList.add("sticky");
+			this.main.classList.add("sticky-marge");
+
+
+		} else {
+			this.navbar.classList.remove("sticky");
+			this.main.classList.remove("sticky-marge");
+		}
+	}
+}
