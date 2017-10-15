@@ -23,7 +23,7 @@
   </script>
   <script src="js/less.min.js" type="text/javascript"></script>
 </head>
-<body onload="APP_CANVAS.init()" onscroll="APP_PAGE.scroll()">
+<body onload="APP_CANVAS.init(); APP_PAGE.filter()" onscroll="APP_PAGE.scroll()">
   <canvas id="header-canvas" height="150" width="100%"></canvas> <!-- WebGL canvas -->
   <header class="container" id="container">
     <div class="container-head" id="container-head">
@@ -40,7 +40,7 @@
             <span></span>
           </div>
         </div>
-        <div class="col-md-12 col-lg-8 col-xl-7 offset-xl-2 offset-lg-0">
+        <div class="col-md-12 col-lg-8 col-xl-8 offset-xl-2 offset-lg-0">
           <nav>
             <ul id="menu-main-menu-1" class="menu">
               <li class="menu-item menu-item-id">
@@ -108,13 +108,193 @@
       </div>
     </div>
     <div class="row content p-4">
-      a
+      <div class="col-xl-9">
+        <!-- POSTS -->
+        <div class="row">
+          <div class="col-12">
+            <h2> Les derniers articles </h2>
+            <!-- FILTERS-->
+            <div class="filters">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="webdesign">Webdesign</button>
+                <button class="btn btn-default filter-button" data-filter="ui">UI design</button>
+                <button class="btn btn-default filter-button" data-filter="cpp">C++</button>
+                <button class="btn btn-default filter-button" data-filter="news">News</button>
+            </div>
+          </div>
+
+          <div class="post col-6 webdesign">
+            <div class="image-post">
+              <a href="#">
+                <img src="https://onextrapixel.com/wp-content/uploads/2017/09/inspiring-wp-sites-545x320.jpg" alt="">
+              </a>
+            </div>
+            <div class="content-post">
+
+              <div class="clearfix">
+                <span class="post-cat float-left"><a href="#" rel="category tag">Webdesign</a></span>
+              </div>
+              <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
+              <div class="post-text">
+                <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
+              </div>
+              <div class="post-meta clearfix">
+                <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
+                <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="post col-6 no">
+            <div class="image-post">
+              <a href="#">
+                <img src="https://onextrapixel.com/wp-content/uploads/2017/09/site-traffic-545x331.jpg" alt="">
+              </a>
+            </div>
+            <div class="content-post">
+
+              <div class="clearfix">
+                <span class="post-cat float-left"><a href="#" rel="category tag">Webdesign</a></span>
+              </div>
+              <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
+              <div class="post-text">
+                <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
+              </div>
+              <div class="post-meta clearfix">
+                <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
+                <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="post col-6 ui">
+            <div class="image-post">
+              <a href="#">
+                <img src="https://onextrapixel.com/wp-content/uploads/2017/09/choosing-a-niche-545x331.jpg" alt="">
+              </a>
+            </div>
+            <div class="content-post">
+
+              <div class="clearfix">
+                <span class="post-cat float-left"><a href="#" rel="category tag">UI Design</a></span>
+              </div>
+              <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
+              <div class="post-text">
+                <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
+              </div>
+              <div class="post-meta clearfix">
+                <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
+                <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="post col-6 webdesign">
+            <div class="image-post">
+              <a href="#">
+                <img src="https://onextrapixel.com/wp-content/uploads/2017/10/typography-tip-545x331.jpg" alt="">
+              </a>
+            </div>
+            <div class="content-post">
+
+              <div class="clearfix">
+                <span class="post-cat float-left"><a href="#" rel="category tag">Webdesign</a></span>
+              </div>
+              <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
+              <div class="post-text">
+                <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
+              </div>
+              <div class="post-meta clearfix">
+                <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
+                <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /POSTS -->
+
+        <div class="col-12 center">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- SIDEBAR-->
+      <div class="col-xl-3">
+        <div class="sidebar-widget about-us">
+          <h4>A propos de #nomdusite#</h4>
+          <div class="content-text">
+            <p>C'est nous lé plu for mdr. 1 2 3 c'est la champion's league papapapa</p>
+          </div>
+        </div>
+        <hr>
+        <div class="sidebar-widget list-writers">
+          <h4>Les membres</h4>
+          <div class="content-members">
+            <ul>
+              <li class="clearfix">
+                <div class="member">
+                  <div class="avatar-frame">
+                    <img src="https://onextrapixel.com/wp-content/uploads/2017/09/inspiring-wp-sites-545x320.jpg" alt="">
+                  </div>
+                  <div class="member-infos">
+                    <span>Seragonia</span>
+
+                  </div>
+                  <div class="member-contact">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="member">
+                  <div class="avatar-frame">
+                    <img src="https://onextrapixel.com/wp-content/uploads/2017/09/inspiring-wp-sites-545x320.jpg" alt="">
+                  </div>
+                  <div class="member-infos">
+                    <span>Kazukatenshi</span>
+
+                  </div>
+                  <div class="member-contact">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="member">
+                  <div class="avatar-frame">
+                    <img src="https://onextrapixel.com/wp-content/uploads/2017/09/inspiring-wp-sites-545x320.jpg" alt="">
+                  </div>
+                  <div class="member-infos">
+                    <span>Owana</span>
+
+                  </div>
+                  <div class="member-contact">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <footer>
   </footer>
   <script src="js/app.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,8 @@
+- largeur fixe + bande full width
+- bouton light/dark
+- blanc sur fond gris + couleurs :
+#594F4F (marron)
+#547980 (bleu océan)
+#45ADA8 (bleu vert)
+#9DE0AD (vert)
+#E5FCC2 (beige)
