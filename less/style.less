@@ -17,6 +17,7 @@
 @border-gray: #bababa;
 @background-clear: #ebebeb;
 @text-normal: #757575;
+@text-lecture: #7b7b7b;
 
 /************************************/
 /*               PAGE               */
@@ -1003,8 +1004,11 @@ img {
   padding: 5% 20%;
   //max-width: 400px;
   font-size: 1.7em;
-  color: @text;
+  color: @text-lecture;
   font-family: "adobe", serif;
+  p {
+    color: @text-lecture;
+  }
 }
 
 .hidden {
@@ -1083,4 +1087,34 @@ img {
   top: 10px;
   width: 0%;
   left: 50%;
+}
+
+/************************************/
+/*               PAGE               */
+/************************************/
+.page-content {
+  margin: 40px 0;
+  background-color: white;
+  padding: 20px 20px;
+}
+
+.search-title {
+  background: white;
+  margin: 15px 15px;
+  padding: 10px 10px;
+}
+
+.no-result::before {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 150px;
+  margin-left: -75px;
+  border-bottom: 1px solid #d2d2d2;
+  content: '';
+}
+
+.no-result {
+  position: relative;
+  margin: 50px 20px;
 }

@@ -84,7 +84,7 @@
         <div id="header-top">
           <div class="container clearfix">
             <div class="row">
-              <div class="col-7">
+              <div class="col-md-7">
                 <form id="header-search" role="search" method="get" action="#">
                   <button type="submit" id="submit-button">
                     <i class="fa fa-search"></i>
@@ -92,7 +92,7 @@
                   <input type="text" placeholder="Rechercher..." class="font-montserrat-reg" style="overflow: hidden">
                 </form>
               </div>
-              <div class="col-5">
+              <div class="col-5 hidden-xs-down">
                 <ul class="header-social">
                   <li>
                     <a href="#" target="_blank">
@@ -109,130 +109,39 @@
             </div>
           </div>
         </div>
-        <div class="row content p-4">
-          <div class="col-xl-9">
-            <!-- POSTS -->
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <h2> Flash people </h2>
-                <!-- FILTERS-->
-              </div>
-              <div class="filters col-6 hidden-sm-down">
-                <button class="btn btn-default filter-button" data-filter="all">All</button>
-                <button class="btn btn-default filter-button" data-filter="webdesign">Webdesign</button>
-                <button class="btn btn-default filter-button" data-filter="ui">UI design</button>
-                <button class="btn btn-default filter-button" data-filter="cpp">C++</button>
-                <button class="btn btn-default filter-button" data-filter="news">News</button>
-              </div>
+        <div class="row content">
+          <div class="col-xl-12 fix-margin">
+            <!-- CONTENT -->
+            <h1>Pourquoi les moutons aiment manger des programmes informatiques non compilés</h1>
+            <div class="page-content">
+              <p><kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd><br><var>y</var> = <var>m</var><var>x</var> + <var>b</var><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus quis urna venenatis feugiat in eu sapien. Cras id eros maximus dolor maximus tempor. Etiam vitae diam eu nisi semper laoreet a ac erat. Nullam pretium ipsum et enim rhoncus eleifend. Aenean elementum quis erat vel vulputate. Cras vitae nisl et quam auctor molestie. Ut interdum rhoncus orci nec convallis. Donec condimentum sodales feugiat. Maecenas arcu odio, viverra non congue quis, egestas nec massa. Maecenas lacinia sem ante. Proin cursus ullamcorper auctor. Phasellus feugiat convallis dui vel vehicula. Nam venenatis euismod massa, a tristique mi. Mauris placerat, elit at lobortis pulvinar, leo est dignissim ex, vitae efficitur mi turpis in ante. Sed metus dolor, congue in massa elementum, rutrum bibendum ante.
+              </p>
+              <p>
+                Nullam volutpat et est sit amet consequat. Proin vitae blandit lacus. Morbi bibendum tincidunt aliquet. Donec ultricies vestibulum nisl, nec tristique metus luctus a. Curabitur faucibus tempus nisl et tincidunt. Donec et mattis mauris. Praesent erat tellus, ultrices at risus id, finibus pretium nulla. Fusce quam ipsum, malesuada ut sagittis laoreet, placerat ac quam. Nulla ac rutrum neque. Etiam iaculis neque vel nibh hendrerit, vitae sagittis massa sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer luctus erat sit amet urna laoreet volutpat. Pellentesque a iaculis purus, et ornare nisi. Nam tristique augue leo, at finibus dui aliquam quis. Duis pulvinar purus sed purus laoreet, in tempor ex accumsan.
+              </p>
+              <p>
+                Vestibulum rhoncus scelerisque tortor, hendrerit malesuada est lobortis et. Etiam eget ante vitae erat porta malesuada ac ut sapien. Nam rutrum nisi sit amet metus bibendum vulputate. Nunc tristique odio tortor, ut pellentesque sem hendrerit in. Mauris sit amet urna iaculis, rutrum lorem ac, placerat nunc. Integer fringilla ex id feugiat efficitur. Phasellus placerat lacus nec quam condimentum, nec mattis nulla consectetur. Praesent a tincidunt arcu, sit amet imperdiet nibh. Praesent finibus leo lectus, nec gravida lorem aliquam vitae.
+              </p>
+              <p>
+                Cras nec eros luctus, sollicitudin ante ac, facilisis tortor. Ut scelerisque ipsum purus. Nullam urna dolor, rutrum non ante in, dictum fringilla quam. Vivamus sed auctor erat. Nam consequat molestie leo nec aliquam. Maecenas venenatis turpis non nisl ornare, eget aliquam massa maximus. Fusce sed laoreet velit, porta varius erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              </p>
+              <p>
+                Aenean vitae sem blandit, mattis purus sed, rutrum ligula. Morbi condimentum tincidunt tortor ut sodales. Suspendisse urna diam, porttitor quis feugiat sit amet, dictum aliquet dui. Quisque eget convallis nibh, sit amet hendrerit libero. Curabitur quis mauris eget magna dignissim scelerisque eget vel lectus. Maecenas ut lacus porta enim rutrum semper id non nisl. Nunc suscipit at massa ut interdum. Praesent vel lorem vulputate mauris tempor iaculis a vitae risus. Pellentesque pretium purus sed semper efficitur. Nulla vestibulum egestas vestibulum. Nam varius ipsum tortor, vitae egestas justo molestie vel. Praesent eleifend rhoncus sem a aliquam.
+              </p>
 
-              <div class="post col-md-6 col-sm-12 webdesign">
-                <div class="image-post">
-                  <a href="#">
-                    <img src="https://onextrapixel.com/wp-content/uploads/2017/09/inspiring-wp-sites-545x320.jpg" alt="">
-                  </a>
-                </div>
-                <div class="content-post">
-
-                  <div class="clearfix">
-                    <span class="post-cat float-left"><a href="#" rel="category tag">Webdesign</a></span>
-                  </div>
-                  <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
-                  <div class="post-text">
-                    <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
-                  </div>
-                  <div class="post-meta clearfix">
-                    <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
-                    <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="post col-md-6 col-sm-12no">
-                <div class="image-post">
-                  <a href="#">
-                    <img src="https://onextrapixel.com/wp-content/uploads/2017/09/site-traffic-545x331.jpg" alt="">
-                  </a>
-                </div>
-                <div class="content-post">
-
-                  <div class="clearfix">
-                    <span class="post-cat float-left"><a href="#" rel="category tag">Webdesign</a></span>
-                  </div>
-                  <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
-                  <div class="post-text">
-                    <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
-                  </div>
-                  <div class="post-meta clearfix">
-                    <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
-                    <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="post col-md-6 col-sm-12ui">
-                <div class="image-post">
-                  <a href="#">
-                    <img src="https://onextrapixel.com/wp-content/uploads/2017/09/choosing-a-niche-545x331.jpg" alt="">
-                  </a>
-                </div>
-                <div class="content-post">
-
-                  <div class="clearfix">
-                    <span class="post-cat float-left"><a href="#" rel="category tag">UI Design</a></span>
-                  </div>
-                  <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
-                  <div class="post-text">
-                    <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
-                  </div>
-                  <div class="post-meta clearfix">
-                    <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
-                    <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="post col-md-6 col-sm-12webdesign">
-                <div class="image-post">
-                  <a href="#">
-                    <img src="https://onextrapixel.com/wp-content/uploads/2017/10/typography-tip-545x331.jpg" alt="">
-                  </a>
-                </div>
-                <div class="content-post">
-
-                  <div class="clearfix">
-                    <span class="post-cat float-left"><a href="#" rel="category tag">Webdesign</a></span>
-                  </div>
-                  <h3 class="post-title"><a href="#">Réalisation d'un thème Wordpress : ça tourne mal</a></h3>
-                  <div class="post-text">
-                    <p>Ceci est un message de test d'un article écrit afin de réaliser la maquette du site. Pour plus d'information, veuillez...</p>
-                  </div>
-                  <div class="post-meta clearfix">
-                    <span class="post-author"><a href="#" title="Posted by Seragonia" rel="author">Seragonia</a></span>
-                    <span class="post-date">&nbsp; – &nbsp;October 15, 2017</span>
-                  </div>
-                </div>
-              </div>
             </div>
-            <!-- /POSTS -->
-            <div class="col-12 center">
-              <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a href="#">1</a>
-                <a href="#" class="active">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">&raquo;</a>
-              </div>
-            </div>
+            <!-- /CONTENT -->
           </div>
           <!-- SIDEBAR-->
-          <div class="col-xl-3">
-            <aside class="sidebar-widget about-us no-dashed">
-              <h4>A propos de #nomdusite#</h4>
+          <div class="offset-xl-2 col-xl-8 sidebar">
+            <aside class="sidebar-widget author-about no-dashed">
+              <div class="avatar-frame">
+                <img src="https://onextrapixel.com/wp-content/uploads/2017/09/inspiring-wp-sites-545x320.jpg" alt="">
+              </div>
+              <h4>Par William</h4>
               <div class="content-text">
-                <p>C'est nous lé plu for mdr. 1 2 3 c'est la champion's league papapapa AH<br>Bonne visite.</p>
+                <p>Il é twé for la ui vlémen didon papapapa</p>
               </div>
             </aside>
             <aside class="sidebar-widget list-writers">
@@ -305,15 +214,15 @@
         <div class="container">
           <div class="row">
             <div class="col-2"></div>
-            <div class="col-md-6 col-sm-12"><p>Article aléatoire : <a href="#">La place des cochons d'inde dans l'industrialisation numérique du Pérou</a></p></div>
+            <div class="col-xl-6 col-lg-12"><p>Article aléatoire : <a href="#">La place des cochons d'inde dans l'industrialisation numérique du Pérou</a></p></div>
             <div class="col-2 hidden-lg-down"><a class="btn-footer beige">Lire l'article</a></div>
           </div>
         </div>
       </section>
       <footer>
-        <div class="container">
+        <div class="container ">
           <div class="row">
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6 col-6">
               <p class="cat-name">Menus</p>
               <ul>
                 <li>Accueil</li>
@@ -322,7 +231,7 @@
                 <li><a href="#">Qui sommes-nous ?</a></li>
               </ul>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6 col-6">
               <p class="cat-name">Catégories</p>
               <ul>
                 <li>Développement</li>
@@ -331,7 +240,7 @@
                 <li>Projet</li>
               </ul>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6 col-6">
               <p class="cat-name">Membres</p>
               <ul>
                 <li>Anaïs Rezé</li>
@@ -339,7 +248,7 @@
                 <li>William Lardier</li>
               </ul>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6 col-6">
               <p class="cat-name">Contact</p>
               <ul>
                 <li>Page de contact</li>
