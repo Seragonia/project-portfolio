@@ -65,6 +65,26 @@ var APP_PAGE = {
 					$(this).parent().find(".sub-menu").toggleClass("opened");
 				});
 			});
+
+
+
+			$('#read-mode').on('click', function (e) {
+				var featured
+				var close = "<div id=\"close-icon\" class=\"sticky-mobile open\">\
+				                <span></span\
+				                <span></span>\
+				                <span></span>\
+				                <span></span>\
+				              </div>";
+				$('#model-lecture-mode').html($('#content-article').html());
+				$('#model-lecture-mode').toggleClass('hidden');
+				$('#top').toggleClass('hidden');
+				$('#model-lecture-mode').prepend(close);
+				$('#close-icon').click(function(){
+					$('#model-lecture-mode').toggleClass('hidden');
+					$('#top').toggleClass('hidden');
+				});
+			})
 		});
 	},
 

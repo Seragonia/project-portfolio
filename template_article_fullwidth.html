@@ -24,13 +24,7 @@
   <script src="js/less.min.js" type="text/javascript"></script>
 </head>
 <body onload="APP_CANVAS.init(); APP_PAGE.filter()" onscroll="APP_PAGE.scroll()">
-
-  <!-- MODE LECTURE -->
-  <div id="model-lecture-mode" class="hidden"></div>
-  <!--/MODE LECTURE -->
-
-
-  <div id="top" style="overflow:hidden">
+  <div style="overflow:hidden">
     <canvas id="header-canvas" height="150" width="100%"></canvas> <!-- WebGL canvas -->
     <header class="container" id="container">
       <div class="container-head" id="container-head">
@@ -116,10 +110,9 @@
           </div>
         </div>
         <div class="row content">
-          <div class="col-xl-9 fix-margin">
+          <div class="col-xl-12 fix-margin">
             <!-- CONTENT -->
-            <div class="read-mode"><button type="button" id="read-mode" class="btn btn-secondary hidden-md-down">Mode lecture</button></div>
-            <div class="article-main" id="content-article">
+            <div class="article-main">
               <div class="img-top"><img class="img-fluid" src="https://fakeimg.pl/742x250/" rel""></div>
               <div class="container-title">
                 <div class="title-article">
@@ -152,7 +145,7 @@
             <!-- /CONTENT -->
           </div>
           <!-- SIDEBAR-->
-          <div class="col-xl-3 sidebar">
+          <div class="offset-xl-2 col-xl-8 sidebar">
             <aside class="sidebar-widget author-about no-dashed">
               <div class="avatar-frame">
                 <img src="https://onextrapixel.com/wp-content/uploads/2017/09/inspiring-wp-sites-545x320.jpg" alt="">
@@ -237,9 +230,6 @@
           </div>
         </div>
       </section>
-
-
-
       <footer>
         <div class="container ">
           <div class="row">
@@ -294,6 +284,5 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         </div>
-      </div>
       </body>
       </html>
