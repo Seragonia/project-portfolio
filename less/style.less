@@ -1100,11 +1100,11 @@ img {
 
 .search-title {
   background: white;
-  margin: 15px 15px;
+  margin: 30px 15px;
   padding: 10px 10px;
 }
 
-.no-result::before {
+.no-result::before, .search-results::before {
   position: absolute;
   top: -9px;
   left: 50%;
@@ -1117,4 +1117,52 @@ img {
 .no-result {
   position: relative;
   margin: 50px 20px;
+}
+
+.search-results {
+  position:relative;
+}
+
+/************************************/
+/*             AUTHOR               */
+/************************************/
+
+.author-profile-picture {
+  width: 100%;
+  height: auto;
+  padding: 5px 5px;
+  border: 1px solid @border-white;
+  background-color: white;
+}
+
+.profile {
+  position: relative;
+  margin-top: -100px;
+  #name {
+    margin: 15px 0px 50px 0px;
+    color: @text-white;
+  }
+  #description {
+
+  }
+  .author-links {
+    margin-top: 15px;
+    text-align: right;
+    a {
+
+      font-size: 1.6em;
+      line-height: 30.8px;
+      vertical-align: middle;
+      color: @text-white;
+      text-decoration: none;
+      margin-left: 10px;
+      &:hover {
+        color: @blue-2
+      }
+    }
+  }
+}
+
+.container-author-top {
+  margin-top: 60px;
 }

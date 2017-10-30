@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio project</title>
+  <meta name="description" content="A portfolio">
+  <meta name="author" content="Owana / Seragonia">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet/less" type="text/css" href="less/style.less?v=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script>
+  less = {
+    env: "development",
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false,
+    rootpath: ""
+  };
+  </script>
+  <script src="js/less.min.js" type="text/javascript"></script>
+</head>
+<body onload="APP_CANVAS.init(); APP_PAGE.filter()" onscroll="APP_PAGE.scroll()">
+  <div id="top" style="overflow:hidden">
+    <canvas id="header-canvas" height="150" width="100%"></canvas> <!-- WebGL canvas -->
+    <header class="container" id="container">
+      <div class="container-head" id="container-head">
+        <div class="row">
+          <div id="logo" class="col-xl-2 col-lg-4 col-md-6 col-4">
+            <a href="#">
+              <div class="logo">
+              </div></a>
+            </div>
+            <div class="hidden-lg-up col-md-6 col-8">
+              <div id="nav-icon" class="sticky-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-8 col-xl-8 offset-xl-2 offset-lg-0">
+              <nav>
+                <ul id="menu-main-menu-1" class="menu">
+                  <li class="menu-item menu-item-id">
+                    <a href="#">
+                      <span>Accueil</span>
+                    </a>
+                  </li>
+                  <li class="menu-item-id menu-item-has-children">
+                    <a href="#"><span>Articles</span></a>
+                    <span class="sub-drop-icon fa fa-angle-down"></span>
+                    <ul class="sub-menu">
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 1</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 1</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 1</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 1</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 1</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 1</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 1</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 2</a></li>
+                      <li class="menu menu-item menu-item-has-children children"><a href="#">SUB MENU 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-id menu-item-has-children">
+                    <a href="#"><span>CV</span></a>
+                  </li>
+                  <li class="menu-item-id menu-item-has-children">
+                    <a href="#"><span>Qui sommes-nous ?</span></a>
+                  </li>
+                  <li class="menu-item-id menu-item-has-children">
+                    <a href="#"><span>Contact</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container main container-author-top" id="main">
+        <div class="row content">
+          <div class="col-xl-10 offset-md-1 fix-margin">
+            <!-- CONTENT -->
+            <div class="row profile">
+              <div class="col-md-4">
+                <img class="author-profile-picture" src="https://fakeimg.pl/250x250/" rel="">
+              </div>
+              <div class="col-md-8">
+                <div class="row"><div class="col-9">
+                  <h3 id="name">Seragonia William</h3>
+                </div>
+                <div class="col-3 author-links">
+                  <a href="#" target="_blank">
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-twitter-square"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-deviantart"></i>
+                  </a>
+                </div>
+              </div>
+              <p id="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus quis urna venenatis feugiat in eu sapien. Cras id eros maximus dolor maximus tempor. Etiam vitae diam eu nisi semper laoreet a ac erat. Nullam pretium ipsum et enim rhoncus eleifend.</p>
+              <div class="row"><div class="col-6"><p id="mail"><b>Courriel: </b><a href="mailto:lardier@et.esiea.fr">lardier@et.esiea.fr</a></p></div><div class="col-6"><p id="tel"><b>Tél.: </b>+33 6 49 92 35 93</p></div></div>
+            </div>
+          </div>
+
+          <!-- /CONTENT -->
+        </div>
+      </div>
+    </div>
+    <section id="random_article">
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-xl-6 col-lg-12"><p>Article aléatoire : <a href="#">La place des cochons d'inde dans l'industrialisation numérique du Pérou</a></p></div>
+          <div class="col-2 hidden-lg-down"><a class="btn-footer beige">Lire l'article</a></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-6">
+            <p class="cat-name">Menus</p>
+            <ul>
+              <li>Accueil</li>
+              <li>Articles</li>
+              <li>CV</li>
+              <li><a href="#">Qui sommes-nous ?</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <p class="cat-name">Catégories</p>
+            <ul>
+              <li>Développement</li>
+              <li>Graphisme</li>
+              <li>Littérature&art</li>
+              <li>Projet</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <p class="cat-name">Membres</p>
+            <ul>
+              <li>Anaïs Rezé</li>
+              <li>Antoine Demarquay</li>
+              <li>William Lardier</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <p class="cat-name">Contact</p>
+            <ul>
+              <li>Page de contact</li>
+              <li>contact@website.io</li>
+              <li>Suivez-nous sur Twitter !</li>
+              <li>Connexion</li>
+            </ul>
+          </div>
+          <div class="separator-80w">
+          </div>
+          <div class="text-aligned">
+            <p>©2017-2018 Anaïs Rezé & William Lardier. Toute copie de l'aspect graphique de ce site web est interdite sans l'accord de nos administrateurs.</p>
+            <div>
+            </div>
+          </div>
+        </footer>
+        <script src="js/app.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </body>
+  </html>

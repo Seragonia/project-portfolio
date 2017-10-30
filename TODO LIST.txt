@@ -11,3 +11,5 @@
 
 SWEET ALERT
 Deepl traducteur
+
+empêcher les robot d'accéder aux pages author
