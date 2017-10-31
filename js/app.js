@@ -55,6 +55,11 @@ var APP_PAGE = {
 		this.sticky = 250;
 
 		$(document).ready(function(){
+
+			$(function () {
+			  $('[data-toggle="tooltip"]').tooltip()
+			})
+
 			$('#nav-icon').click(function(){
 				$(this).toggleClass('open');
 				$('.menu').toggleClass('menu-active');
