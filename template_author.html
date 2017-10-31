@@ -8,6 +8,7 @@
   <meta name="author" content="Owana / Seragonia">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet/less" type="text/css" href="less/style.less?v=1.0" />
+  <link rel="stylesheet/less" type="text/css" href="less/styletab.less?v=1.0" />
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <script>
   less = {
@@ -109,98 +110,127 @@
               </div>
               <p id="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus quis urna venenatis feugiat in eu sapien. Cras id eros maximus dolor maximus tempor. Etiam vitae diam eu nisi semper laoreet a ac erat. Nullam pretium ipsum et enim rhoncus eleifend.</p>
               <div class="row">
-                <div class="col-6"><p id="mail"><b>Courriel: </b><a href="mailto:lardier@et.esiea.fr">lardier@et.esiea.fr</a></p><p id="tel"><b>Tél.: </b>+33 6 49 92 35 93</p></div>
+                <div class="col-6"><p id="mail"><b>Courriel: </b><a href="mailto:lardier@et.esiea.fr">mail@domain.fr</a></p><p id="tel"><b>Tél.: </b>+33 0 00 00 00 00</p></div>
                 <div class="col-6"><button type="button" class="btn btn-secondary btn-lg">Voir le CV (en ligne)</button></div>
               </div>
             </div>
           </div>
 
+          <!--  <div class="row">
+          <div class="col-12 author-decription-long p-5">
           <div class="row">
-            <div class="col-12 author-decription-long p-5">
-              <div class="row">
-                <div class="col-6">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br>Proin quis risus quis urna venenatis feugiat in eu sapien. Cras id eros maximus dolor maximus tempor. Etiam vitae diam eu nisi semper laoreet a ac erat. Nullam pretium ipsum et enim rhoncus eleifend.
-                  </p>
-                </div>
-                <div class="col-6">
-                  <p>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /CONTENT -->
-        </div>
+          <div class="col-12 moreinfo-author">
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <br>Proin quis risus quis urna venenatis feugiat in eu sapien. Cras id eros maximus dolor maximus tempor. Etiam vitae diam eu nisi semper laoreet a ac erat. Nullam pretium ipsum et enim rhoncus eleifend.
+          <br>Message complémentaire du profil ici.
+        </p>
       </div>
     </div>
-    <section id="random_article">
-      <div class="container">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-xl-6 col-lg-12"><p>Article aléatoire : <a href="#">La place des cochons d'inde dans l'industrialisation numérique du Pérou</a></p></div>
-          <div class="col-2 hidden-lg-down"><a class="btn-footer beige">Lire l'article</a></div>
-        </div>
-      </div>
+  </div>
+</div> -->
+
+<div class="row tabs">
+  <input type="radio" id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">
+  <input type="radio" id="tab4" name="tab-control">
+  <ul>
+    <li title="General"><label for="tab1" role="button"><br><span>Général</span></label></li>
+    <li title="CV en ligne"><label for="tab2" role="button"><br><span>CV en ligne</span></label></li>
+    <li title="Shipping"><label for="tab3" role="button"><br><span>Shipping</span></label></li>
+    <li title="Returns"><label for="tab4" role="button"><br><span>Returns</span></label></li>
+  </ul>
+  <div class="slider"><div class="indicator"></div></div>
+
+  <div class="content-author-tab">
+    <section>
+      <h2>Features</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates quibusdam cum?
     </section>
-
-
-
-    <footer>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-6">
-            <p class="cat-name">Menus</p>
-            <ul>
-              <li>Accueil</li>
-              <li>Articles</li>
-              <li>CV</li>
-              <li><a href="#">Qui sommes-nous ?</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6 col-6">
-            <p class="cat-name">Catégories</p>
-            <ul>
-              <li>Développement</li>
-              <li>Graphisme</li>
-              <li>Littérature&art</li>
-              <li>Projet</li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6 col-6">
-            <p class="cat-name">Membres</p>
-            <ul>
-              <li>Anaïs Rezé</li>
-              <li>Antoine Demarquay</li>
-              <li>William Lardier</li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6 col-6">
-            <p class="cat-name">Contact</p>
-            <ul>
-              <li>Page de contact</li>
-              <li>contact@website.io</li>
-              <li>Suivez-nous sur Twitter !</li>
-              <li>Connexion</li>
-            </ul>
-          </div>
-          <div class="separator-80w">
-          </div>
-          <div class="text-aligned">
-            <p>©2017-2018 Anaïs Rezé & William Lardier. Toute copie de l'aspect graphique de ce site web est interdite sans l'accord de nos administrateurs.</p>
-            <div>
-            </div>
-          </div>
-        </footer>
-        <script src="js/app.js"></script>
-        <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-      </div>
+    <section>
+      <h2>Delivery Contents</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.
+    </section>
+    <section>
+      <h2>Shipping</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.
+    </section>
+    <section>
+      <h2>Returns</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.
+    </section>
+  </div>
+</div>
+<!-- /CONTENT -->
+</div>
+</div>
+</div>
+<section id="random_article">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-xl-6 col-lg-12"><p>Article aléatoire : <a href="#">La place des cochons d'inde dans l'industrialisation numérique du Pérou</a></p></div>
+      <div class="col-2 hidden-lg-down"><a class="btn-footer beige">Lire l'article</a></div>
     </div>
-  </body>
-  </html>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-6">
+        <p class="cat-name">Menus</p>
+        <ul>
+          <li>Accueil</li>
+          <li>Articles</li>
+          <li>CV</li>
+          <li><a href="#">Qui sommes-nous ?</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6">
+        <p class="cat-name">Catégories</p>
+        <ul>
+          <li>Développement</li>
+          <li>Graphisme</li>
+          <li>Littérature&art</li>
+          <li>Projet</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6">
+        <p class="cat-name">Membres</p>
+        <ul>
+          <li>Anaïs Rezé</li>
+          <li>Antoine Demarquay</li>
+          <li>William Lardier</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6">
+        <p class="cat-name">Contact</p>
+        <ul>
+          <li>Page de contact</li>
+          <li>contact@website.io</li>
+          <li>Suivez-nous sur Twitter !</li>
+          <li>Connexion</li>
+        </ul>
+      </div>
+      <div class="separator-80w">
+      </div>
+      <div class="text-aligned">
+        <p>©2017-2018 Anaïs Rezé & William Lardier. Toute copie de l'aspect graphique de ce site web est interdite sans l'accord de nos administrateurs.</p>
+        <div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </div>
+</div>
+</body>
+</html>
